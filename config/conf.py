@@ -26,7 +26,7 @@ class ConfigManager(object):
 
     # 邮件信息
     EMAIL_INFO = {
-        'username': '1084502012@qq.com',  # 切换成你自己的地址
+        'username': '2328023881@qq.com',  # 切换成你自己的地址
         'password': 'QQ邮箱授权码',
         'smtp_host': 'smtp.qq.com',
         'smtp_port': 465
@@ -34,7 +34,7 @@ class ConfigManager(object):
 
     # 收件人
     ADDRESSEE = [
-        '1084502012@qq.com',
+        '2328023881@qq.com',
     ]
 
     @property
@@ -56,5 +56,5 @@ class ConfigManager(object):
 
 cm = ConfigManager()
 if __name__ == '__main__':
-    print(cm.BASE_DIR)
-    print(cm.ini_file)
+    print(ConfigManager.BASE_DIR)
+    print(cm.LOCATE_MODE)
